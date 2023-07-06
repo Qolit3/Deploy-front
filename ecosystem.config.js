@@ -17,7 +17,6 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: 'git@github.com:Qolit3/Deploy-front.git',
       path: DEPLOY_PATH,
-      'pre-deploy': `scp ./*.env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
       'post-deploy': 'npm i && npm run build',
     },
   },
