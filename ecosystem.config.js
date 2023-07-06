@@ -15,7 +15,7 @@ module.exports = {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
-      repo: 'git@github.com:Qolit3/Deploy-front.git',
+      repo: 'https://github.com/Qolit3/Deploy-back.git',
       path: DEPLOY_PATH,
       'post-deploy': 'npm i && npm run build',
     },
